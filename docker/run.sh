@@ -5,7 +5,7 @@ set -e
 
 # Load input into /tusk/source
 mkdir source
-tee | tar -jxf - -C source 
+tee | tar -zxf - -C source 
 
 # Compile, output to stderr
 gcc -Wall -o output source/*.c 1>&2

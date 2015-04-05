@@ -11,7 +11,7 @@ Python 2.7 and Docker (boot2docker as well if on OSX).
 ```
 source venv/bin/activate
 pip install -r requirements.txt
-docker build -t tinytusk docker/
+docker build -t tinytusk ./docker/
 ```
 
 updating packages
