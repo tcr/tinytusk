@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "codemirror": "^5.1.0",
+    "dicer": "^0.2.4",
     "jquery": "^2.1.3",
+    "request": "^2.55.0",
     "tar-stream": "^1.1.2"
   }
 }

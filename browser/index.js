@@ -14,4 +14,8 @@ $(function () {
     mode:  "clike",
     theme: 'monokai',
   });
+
+  $('#submit').on('click', function () {
+  	
+  })
 })
