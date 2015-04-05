@@ -4,7 +4,7 @@ A tiny C build server.
 
 ## requirements
 
-Python 2.7 and Docker (boot2docker as well if on OSX).
+Python 2.7, Docker (boot2docker as well if on OSX), and Browserify.
 
 ## installing
 
@@ -12,9 +12,17 @@ Python 2.7 and Docker (boot2docker as well if on OSX).
 source venv/bin/activate
 pip install -r requirements.txt
 docker build -t tinytusk ./docker/
+npm install --prefix ./browser
+browserify browser/index.js -o static/ide.js
 ```
 
-updating packages
+when changing `browser/` code
+
+```
+browserify browser/index.js -o static/ide.js
+```
+
+when updating packages
 
 ```
 pip freeze > requirements.txt
