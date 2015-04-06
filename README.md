@@ -11,6 +11,7 @@ A tiny C build server.
 ## installing
 
 ```
+virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 docker build -t tinytusk ./docker/
