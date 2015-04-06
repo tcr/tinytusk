@@ -11,6 +11,7 @@
   "dependencies": {
     "browserify-zlib": "^0.1.4",
     "codemirror": "^5.1.0",
+    "crypto-browserify": "^3.9.13",
     "dicer": "^0.2.4",
     "jquery": "^2.1.3",
     "request": "^2.55.0",
