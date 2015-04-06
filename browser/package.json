@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify-zlib": "^0.1.4",
     "codemirror": "^5.1.0",
     "dicer": "^0.2.4",
     "jquery": "^2.1.3",

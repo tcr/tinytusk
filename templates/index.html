@@ -5,8 +5,20 @@
     <title>Tiny Tusk IDE</title>
     <link rel="stylesheet" href="/static/codemirror.css">
     <link rel="stylesheet" href="/static/monokai.css">
+    <style>
+pre { background: #ddd; padding: 0.5em 1em; }
+pre:empty { display: none; }
+#output-info { color: red; }
+#output-result { color: green; }
+html, body { margin: 0; padding: 0; }
+body { padding: 30px; font-family: Helvetica; font-size: 16px; }
+h1 { font-size: 24px; }
+#controls { padding: 10px 15px; background: #eee;}
+button { font: inherit; padding: 8px 15px; }
+    </style>
   </head>
   <body>
+    <h1>Tiny-Tusk, a C IDE</h1>
     <textarea id="editor" rows="25" cols="75">#include &lt;stdio.h&gt;
 
 int main () {
@@ -14,6 +26,15 @@ int main () {
   return 0;
 }
 </textarea>
+    <div id="controls">
+      <button id="submit-test">Test</button>
+      <button id="submit-build">Build</button>
+      <a id="binary-test" style="display: none">[ Download binary ]</a>
+    </div>
+    <h5>Warnings and errors:</h5>
+    <pre id="output-info"></pre>
+    <h5>Result:</h5>
+    <pre id="output-result"></pre>
   </body>
 
   <!-- as good as defer in a pinch -->
