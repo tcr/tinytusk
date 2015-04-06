@@ -47,6 +47,12 @@ All editing is done in-browser. The browser IDE produces a tarball that is sent 
 the stdout+stderr of the application
 * `/api/build` &mdash; returns a multipart message of build errors/warnings and the binary of the application (Linux, 64-bit)
 
+## screenshot
+
+Sure, why not!
+
+![the tiniest of tusks](http://i.imgur.com/nnu2m2x.png)
+
 ## license
 
 MIT or ASL2
